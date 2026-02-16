@@ -231,6 +231,23 @@ main {
   gap: 0.8rem;
 }
 
+.women-choir-header {
+  text-align: center;
+}
+
+.women-choir-kicker {
+  margin: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.women-choir .section-title {
+  margin-top: 0.2rem;
+}
+
 .choir-card {
   border: 1px solid var(--line);
   background: var(--surface);
@@ -250,14 +267,17 @@ main {
 
 .concert-date {
   display: inline-flex;
-  margin-top: 0.7rem;
-  padding: 0.35rem 0.7rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.7rem auto 0;
+  padding: 0.42rem 0.85rem;
   border-radius: 999px;
   border: 1px solid #ef9999;
   background: #ffe4e4;
   color: #8a1f1f;
   font-weight: 700;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .profile-card {
