@@ -129,6 +129,7 @@ main {
 
 .hero,
 .facts,
+.women-choir,
 .profiles,
 .statement,
 .contact {
@@ -221,6 +222,30 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.8rem;
+}
+
+.choir-grid {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.choir-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.choir-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.choir-card p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
 }
 
 .profile-card {
@@ -340,6 +365,10 @@ footer p {
   animation-delay: 240ms;
 }
 
+.women-choir {
+  animation-delay: 220ms;
+}
+
 .statement {
   animation-delay: 320ms;
 }
@@ -358,6 +387,7 @@ footer p {
 @media (max-width: 980px) {
   .hero,
   .facts,
+  .choir-grid,
   .profile-grid,
   .statement-grid {
     grid-template-columns: 1fr;
