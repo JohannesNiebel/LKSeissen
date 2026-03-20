@@ -142,10 +142,10 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
   align-items: center;
-  gap: 1rem;
-  padding: clamp(1rem, 1.4vw, 1.35rem);
+  gap: clamp(1rem, 2.2vw, 2rem);
+  padding: clamp(1rem, 1.8vw, 1.6rem);
 }
 
 .hero .eyebrow {
@@ -170,21 +170,63 @@ main {
   color: #6e5041;
 }
 
-.hero-logo-wrap {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  justify-self: end;
+.hero-content {
+  display: grid;
+  gap: 0.9rem;
+  align-content: center;
 }
 
-.hero-logo {
+.hero-event {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #ef9999;
+  background: #ffe4e4;
+  color: #8a1f1f;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 2.9rem;
+  padding: 0 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--accent-2);
+  color: #ffffff;
+  text-decoration: none;
+  transition: 200ms ease;
+}
+
+.hero-link:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.hero-poster-wrap {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 245, 236, 0.86));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.hero-poster {
   display: block;
-  height: clamp(210px, 26vw, 350px);
-  width: auto;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: min(74vh, 760px);
+  border-radius: 18px;
   object-fit: contain;
+  background: #ffffff;
 }
 
 .facts {
@@ -429,13 +471,12 @@ footer p {
     max-width: 100%;
   }
 
-  .hero-logo-wrap {
+  .hero-poster-wrap {
     width: 100%;
-    justify-self: center;
   }
 
-  .hero-logo {
-    height: clamp(200px, 42vw, 290px);
+  .hero-poster {
+    max-height: 68vh;
   }
 }
 
