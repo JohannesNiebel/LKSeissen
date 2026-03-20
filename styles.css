@@ -190,26 +190,6 @@ main {
   letter-spacing: 0.01em;
 }
 
-.hero-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  min-height: 2.9rem;
-  padding: 0 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--accent-2);
-  color: #ffffff;
-  text-decoration: none;
-  transition: 200ms ease;
-}
-
-.hero-link:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
 .hero-poster-wrap {
   margin: 0;
   padding: 0.75rem;
